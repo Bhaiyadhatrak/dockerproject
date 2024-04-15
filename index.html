@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day Greeting</title>
+</head>
+<body>
+    <div id="greeting"></div>
+
+    <script>
+        // Get the current day of the week (0 = Sunday, 1 = Monday, ..., 6 = Saturday)
+        var currentDay = new Date().getDay();
+
+        // Check if it's Monday (day number 1)
+        if (currentDay === 1) {
+            // If it's Monday, display special message
+            document.getElementById("greeting").innerText = "It's Monday! Have a nice day!";
+        } else {
+            // If it's not Monday, display general message
+            document.getElementById("greeting").innerText = "Have a nice day!";
+        }
+    </script>
+</body>
+</html>
